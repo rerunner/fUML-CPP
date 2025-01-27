@@ -11,6 +11,7 @@
 #include <utils/library/FoundationalModelLibraryModel.h>
 #include <iostream>
 #include <algorithm>
+#include <limits.h>
 
 using namespace fuml::library::channel;
 

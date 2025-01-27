@@ -4,8 +4,6 @@
  * Auto-generated file
  */
 
-#include "PolymorphismTestModel.h"
-
 #include <uml/commonbehavior/FunctionBehavior.h>
 #include <uml/actions/CallBehaviorAction.h>
 #include <uml/activities/ObjectFlow.h>
@@ -33,6 +31,7 @@
 #include <uml/actions/OutputPin.h>
 #include <uml/structuredclassifiers/Class_.h>
 
+#include "PolymorphismTestModel.h"
 
 /* Start of user code : User-defined includes and using directives
  * This section may be used for includes and using directives.

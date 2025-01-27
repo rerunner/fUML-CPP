@@ -4,6 +4,7 @@
  *  Created on: 13.09.2023
  *      Author: maha6913
  */
+#include <limits.h>
 
 #include <utils/library/channel/TextInputChannelObject.h>
 

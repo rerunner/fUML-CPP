@@ -5,10 +5,10 @@
  *      Author: Maximilian
  */
 
-#include <utils/primitivetypes/PrimitiveTypesModel.h>
-
 #include <uml/simpleclassifiers/PrimitiveType.h>
 #include <stdexcept>
+
+#include <utils/primitivetypes/PrimitiveTypesModel.h>
 
 using namespace fuml::primitivetypes;
 

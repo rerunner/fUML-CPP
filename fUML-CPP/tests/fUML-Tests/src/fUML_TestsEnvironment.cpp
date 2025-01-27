@@ -3,10 +3,9 @@
  * 
  * Auto-generated file
  */
-
-#include "fUML_TestsEnvironment.h"
-
+#include <iostream>
 #include "fUML_TestsModel.h"
+#include "fUML_TestsEnvironment.h"
 
 /* Start of user code : User-defined includes and using directives
  * This section may be used for includes and using directives.
@@ -21,7 +20,7 @@ using namespace fUML_Tests;
 
 /* Start of user code : User-defined members
  * This section may be used for user-defined members,
- * for exmaple implementations of user-defined member functions
+ * for example implementations of user-defined member functions
  * or definition of static members.
  * It will not be overwritten by future generation processes.
  */
@@ -72,7 +71,7 @@ const std::shared_ptr<fUML_TestsEnvironment>& fUML_TestsEnvironment::Instance()
 
 	return instance;
 }
-
+#include <string>
 void fUML_TestsEnvironment::execute(std::string behaviorName)
 {
 	/* Start of user code : Context and inputs initializations

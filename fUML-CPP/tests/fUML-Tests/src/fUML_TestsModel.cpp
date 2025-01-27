@@ -4,8 +4,6 @@
  * Auto-generated file
  */
 
-#include "fUML_TestsModel.h"
-
 #include <uml/commonbehavior/FunctionBehavior.h>
 #include <uml/actions/DestroyObjectAction.h>
 #include <uml/activities/Activity.h>
@@ -64,6 +62,8 @@
 #include <uml/simpleclassifiers/Signal.h>
 #include <uml/actions/ReadExtentAction.h>
 
+#include <string>
+#include "fUML_TestsModel.h"
 
 /*
  *	TODO: Generate includes for metaclasses

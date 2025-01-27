@@ -9,6 +9,7 @@
 #define EXAMPLES_HELLOWORLD_OPAQUEBEHAVIOREXECUTIONS_HELLOWORLDEXAMPLE_H_
 
 #include <utils/environment/Environment.h>
+#include "HelloWorldExampleModel.h"
 
 namespace examples::HelloWorldExample
 {

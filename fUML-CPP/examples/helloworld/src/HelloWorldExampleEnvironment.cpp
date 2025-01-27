@@ -5,9 +5,10 @@
  *      Author: Maximilian
  */
 
-#include "HelloWorldExampleEnvironment.h"
+#include <string>
+//#include "HelloWorldExampleModel.h"
 
-#include "HelloWorldExampleModel.h"
+#include "HelloWorldExampleEnvironment.h"
 
 const std::shared_ptr<examples::HelloWorldExample::HelloWorldExampleEnvironment>& examples::HelloWorldExample::HelloWorldExampleEnvironment::Instance()
 {
@@ -45,3 +46,4 @@ void examples::HelloWorldExample::HelloWorldExampleEnvironment::execute(std::str
 	//ParameterValueListPtr theOutputs = this->outputs;
 	//...
 }
+

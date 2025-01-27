@@ -1,7 +1,9 @@
-#include "fUML_TestsEnvironment.h"
 #include <iostream>
+#include "fUML_TestsEnvironment.h"
+//#include <string>
 
-using namespace std;
+
+//using namespace std;
 
 static void printUsage()
 {

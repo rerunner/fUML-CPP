@@ -11,6 +11,8 @@
 #include <uml/commonbehavior/FunctionBehavior.h>
 #include <utils/library/FoundationalModelLibraryModel.h>
 
+#include <limits.h>
+
 using namespace fuml::library::realfunctions;
 
 RealDivideFunctionBehaviorExecution::RealDivideFunctionBehaviorExecution()

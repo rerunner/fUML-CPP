@@ -4,10 +4,6 @@
  * Auto-generated file
  */
 
-#include "PolymorphismTestEnvironment.h"
-
-#include "PolymorphismTestModel.h"
-
 /* Start of user code : User-defined includes and using directives
  * This section may be used for includes and using directives.
  * It will not be overwritten by future generation processes.
@@ -16,6 +12,10 @@
 #include "fuml/semantics/loci/ExecutionFactory.h"
 #include "fuml/extensions/structuredclassifiers/UMLConformingDispatchStrategy.h"
 #include "fuml/extensions/structuredclassifiers/SignatureBasedDispatchStrategy.h"
+
+#include "PolymorphismTestModel.h"
+#include "PolymorphismTestEnvironment.h"
+
 /*
  * End of user code
  */

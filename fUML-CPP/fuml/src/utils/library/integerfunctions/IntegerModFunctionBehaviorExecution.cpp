@@ -5,6 +5,8 @@
  *      Author: Maximilian
  */
 
+#include <limits.h>
+
 #include <utils/library/integerfunctions/IntegerModFunctionBehaviorExecution.h>
 
 #include <fuml/Debug.h>

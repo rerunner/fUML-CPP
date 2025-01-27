@@ -11,6 +11,8 @@
 #include <uml/fwd.h>
 #include <fuml/semantics/fwd.h>
 
+#include <string> // for string class
+
 namespace fuml::library::common
 {
 	class Status

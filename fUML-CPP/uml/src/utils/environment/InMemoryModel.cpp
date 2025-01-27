@@ -5,9 +5,9 @@
  *      Author: Maximilian
  */
 
-#include <utils/environment/InMemoryModel.h>
-
 #include <utils/UmlObject.h>
+
+#include <utils/environment/InMemoryModel.h>
 
 using namespace uml::environment;
 

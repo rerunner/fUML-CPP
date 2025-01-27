@@ -5,7 +5,7 @@
  *      Author: Maximilian
  */
 
-#include "HelloWorldExampleModel.h"
+//#include "HelloWorldExampleModel.h"
 
 #include <uml/actions/CallBehaviorAction.h>
 #include <uml/actions/InputPin.h>
@@ -22,6 +22,8 @@
 #include <uml/values/LiteralString.h>
 #include <utils/library/FoundationalModelLibraryModel.h>
 #include <utils/primitivetypes/PrimitiveTypesModel.h>
+
+#include "HelloWorldExampleModel.h"
 
 using namespace examples::HelloWorldExample;
 

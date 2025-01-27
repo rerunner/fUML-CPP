@@ -4,7 +4,7 @@
  *  Created on: 12.09.2023
  *      Author: Maximilian
  */
-
+#include <limits.h>
 #include <utils/library/integerfunctions/IntegerDivFunctionBehaviorExecution.h>
 
 #include <fuml/Debug.h>

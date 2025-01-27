@@ -31,7 +31,11 @@
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
         <listEntry value="4"/>
     </listAttribute>
+    <mapAttribute key="org.eclipse.debug.core.environmentVariables">
+        <mapEntry key="LD_LIBRARY_PATH" value="/lib:/usr/lib:/usr/local/lib:/home/rerun/Projects/Papyrus/fUML-CPP/fUML-CPP/fUML-CPP/uml/Debug:/home/rerun/Projects/Papyrus/fUML-CPP/fUML-CPP/fUML-CPP/fuml/Debug"/>
+    </mapAttribute>
     <listAttribute key="org.eclipse.debug.ui.favoriteGroups">
         <listEntry value="org.eclipse.debug.ui.launchGroup.debug"/>
     </listAttribute>
+    <stringAttribute key="process_factory_id" value="org.eclipse.cdt.dsf.gdb.GdbProcessFactory"/>
 </launchConfiguration>

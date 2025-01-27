@@ -8,6 +8,7 @@
 #define FUML_TESTS_ENVIRONMENT_H
 
 #include <utils/environment/Environment.h>
+//#include <string>
 
 /* Start of user code : User-defined includes and forward declarations
  * This section may be used for includes and forward declarations.

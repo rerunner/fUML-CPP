@@ -5,10 +5,10 @@
  *      Author: maha6913
  */
 
-#include <utils/extensionsprofile/ExtensionsProfileModel.h>
-
 #include <uml/packages/Profile.h>
 #include <uml/packages/Stereotype.h>
+
+#include <utils/extensionsprofile/ExtensionsProfileModel.h>
 
 using namespace uml::extensionsprofile;
 

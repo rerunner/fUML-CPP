@@ -1,12 +1,13 @@
+#include <string>
 
 #include "HelloWorldExampleEnvironment.h"
 
-#include <iostream>
-using namespace std;
+//#include <iostream>
+//using namespace std;
 
 int main() {
-
-	examples::HelloWorldExample::HelloWorldExampleEnvironment::Instance()->execute("main");
+	std::string mainString("main");
+	examples::HelloWorldExample::HelloWorldExampleEnvironment::Instance()->execute(mainString);
 
 	return 0;
 }

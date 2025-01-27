@@ -13,6 +13,8 @@
 #include <fuml/semantics/loci/Locus.h>
 #include <fuml/semantics/simpleclassifiers/RealValue.h>
 
+#include <limits.h>
+
 using namespace fuml::library::realfunctions;
 
 RealFunctionBehaviorExecution::~RealFunctionBehaviorExecution()

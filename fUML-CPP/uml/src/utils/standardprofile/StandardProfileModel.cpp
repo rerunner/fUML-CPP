@@ -5,10 +5,10 @@
  *      Author: maha6913
  */
 
-#include <utils/standardprofile/StandardProfileModel.h>
-
 #include <uml/packages/Profile.h>
 #include <uml/packages/Stereotype.h>
+
+#include <utils/standardprofile/StandardProfileModel.h>
 
 using namespace uml::standardprofile;
 
