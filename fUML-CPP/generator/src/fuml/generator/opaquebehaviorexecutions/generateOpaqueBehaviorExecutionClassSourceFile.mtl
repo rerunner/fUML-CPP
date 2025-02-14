@@ -52,7 +52,7 @@ using namespace [anOpaqueBehavior.getRootPackage().getNameSanitized()/];
 
 [anOpaqueBehavior.getNameSanitized() + 'Execution'/]::[anOpaqueBehavior.getNameSanitized() + 'Execution'/]()
 {
-	this->types->push_back([anOpaqueBehavior.getRootPackage().getNameSanitized() + 'Model::Instance()->' + anOpaqueBehavior.getFullName()/]);
+	this->types->push_back([anOpaqueBehavior.getRootPackage().getNameSanitized() + 'Model::Instance()->' + anOpaqueBehavior.getFullNameSanitized()/]);
 	/* [protected (': Additional opaque behavior execution initializations')]
  	 * This section may be used to do any additional opaque behavior execution initialization,
 	 * for example initializing user-defined members.

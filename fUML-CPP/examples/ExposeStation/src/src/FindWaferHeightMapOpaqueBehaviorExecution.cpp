@@ -39,7 +39,7 @@ using namespace Expose_Station_Model;
 
 FindWaferHeightMapOpaqueBehaviorExecution::FindWaferHeightMapOpaqueBehaviorExecution()
 {
-	this->types->push_back(Expose_Station_ModelModel::Instance()->Expose Station Model_ExposeStation_ExposeWaferActivity_FindWaferHeightMapOpaqueBehavior);
+	this->types->push_back(Expose_Station_ModelModel::Instance()->Expose_Station_Model_ExposeStation_ExposeWaferActivity_FindWaferHeightMapOpaqueBehavior);
 	/* Start of user code : Additional opaque behavior execution initializations
  	 * This section may be used to do any additional opaque behavior execution initialization,
 	 * for example initializing user-defined members.
