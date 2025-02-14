@@ -12,7 +12,7 @@
  * Auto-generated file
  */
 
-#include "[anOpaqueBehavior.getNameSanitized() + 'Execution.h'/]"
+#include <string>
 
 #include "[anOpaqueBehavior.getRootPackage().getNameSanitized() + 'Model.h'/]"
 [for (includeStatement : String | 
@@ -25,6 +25,8 @@
 	->asOrderedSet())]
 [includeStatement/]
 [/for]
+
+#include "[anOpaqueBehavior.getNameSanitized() + 'Execution.h'/]"
 
 /* [protected (': User-defined includes and using directives')]
  * This section may be used for includes and using directives.
@@ -39,7 +41,7 @@ using namespace [anOpaqueBehavior.getRootPackage().getNameSanitized()/];
 
 /* [protected (': User-defined members')]
  * This section may be used for user-defined members,
- * for exmaple implementations of user-defined member functions
+ * for example implementations of user-defined member functions
  * or definition of static members.
  * It will not be overwritten by future generation processes.
  */

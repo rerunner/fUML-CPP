@@ -25,7 +25,7 @@ using namespace Expose_Station_Model;
 
 /* Start of user code : User-defined members
  * This section may be used for user-defined members,
- * for exmaple implementations of user-defined member functions
+ * for example implementations of user-defined member functions
  * or definition of static members.
  * It will not be overwritten by future generation processes.
  */

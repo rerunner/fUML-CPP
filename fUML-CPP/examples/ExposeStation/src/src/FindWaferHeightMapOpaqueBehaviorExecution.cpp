@@ -28,7 +28,7 @@ using namespace Expose_Station_Model;
 
 /* Start of user code : User-defined members
  * This section may be used for user-defined members,
- * for exmaple implementations of user-defined member functions
+ * for example implementations of user-defined member functions
  * or definition of static members.
  * It will not be overwritten by future generation processes.
  */
@@ -39,7 +39,7 @@ using namespace Expose_Station_Model;
 
 FindWaferHeightMapOpaqueBehaviorExecution::FindWaferHeightMapOpaqueBehaviorExecution()
 {
-	this->types->push_back(Expose_Station_ModelModel::Instance()->Expose_Station_Model_ExposeStation_ExposeWaferActivity_FindWaferHeightMapOpaqueBehavior);
+	this->types->push_back(Expose_Station_ModelModel::Instance()->Expose Station Model_ExposeStation_ExposeWaferActivity_FindWaferHeightMapOpaqueBehavior);
 	/* Start of user code : Additional opaque behavior execution initializations
  	 * This section may be used to do any additional opaque behavior execution initialization,
 	 * for example initializing user-defined members.

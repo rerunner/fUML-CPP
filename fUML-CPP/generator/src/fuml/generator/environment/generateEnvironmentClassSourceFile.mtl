@@ -12,12 +12,14 @@
  * Auto-generated file
  */
 
-#include "[aPackage.getNameSanitized() + 'Environment.h'/]"
+#include <string>
 
 #include "[aPackage.getNameSanitized() + 'Model.h'/]"
 [for (anOpaqueBehavior : OpaqueBehavior | aPackage.allOwnedElements()->filter(OpaqueBehavior))]
 #include "[anOpaqueBehavior.getNameSanitized() + 'Execution.h'/]"
 [/for]
+
+#include "[aPackage.getNameSanitized() + 'Environment.h'/]"
 
 /* [protected (': User-defined includes and using directives')]
  * This section may be used for includes and using directives.
@@ -32,7 +34,7 @@ using namespace [aPackage.getNameSanitized()/];
 
 /* [protected (': User-defined members')]
  * This section may be used for user-defined members,
- * for exmaple implementations of user-defined member functions
+ * for example implementations of user-defined member functions
  * or definition of static members.
  * It will not be overwritten by future generation processes.
  */

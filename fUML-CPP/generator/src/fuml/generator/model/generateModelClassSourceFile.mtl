@@ -14,8 +14,6 @@
  * Auto-generated file
  */
 
-#include "[aPackage.getNameSanitized() + 'Model.h'/]"
-
 [aPackage.allOwnedElements()
 ->select(e : Element | supportedUMLMetaclasses()->includes(e.eClass().name))
 .generateMetaclassInclude()
@@ -26,6 +24,7 @@
 ->including('#include <utils/library/FoundationalModelLibraryModel.h>\r\n')
 ->addAll(aPackage.getAllAppliedProfiles()->select(isSupportedProfile()).generateProfileInclude())
 ->asOrderedSet()/]
+#include "[aPackage.getNameSanitized() + 'Model.h'/]"
 
 /* [protected (': User-defined includes and using directives')]
  * This section may be used for includes and using directives.
@@ -42,7 +41,7 @@ using namespace fuml::library;
 
 /* [protected (': User-defined members')]
  * This section may be used for user-defined members,
- * for exmaple implementations of user-defined member functions
+ * for example implementations of user-defined member functions
  * or definition of static members.
  * It will not be overwritten by future generation processes.
  */
