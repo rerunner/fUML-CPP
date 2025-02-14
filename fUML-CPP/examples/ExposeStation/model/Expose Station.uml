@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_UdIIEN2GEe-qQvJQF8Kn1Q" name="Expose Station Model" visibility="public" URI="model::Expose Station::ExposeStation">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_Ug_UYN2GEe-qQvJQF8Kn1Q">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_ZNoh0OiLEe-YJd8bY9xY_Q">
+    <importedPackage xmi:type="uml:Model" href="pathmap://PAPYRUS_fUML_LIBRARY/fUML_Library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_v90fIN2VEe-MDutqMaWLOw" name="ExposeStation" visibility="package">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_aAlV4OVjEe-7ntHC1i7QXg" name="WaferID" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lUbBoOVjEe-7ntHC1i7QXg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mYsiEOVjEe-7ntHC1i7QXg" value="1"/>
+    </ownedAttribute>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_oxvngOldEe-Ojsc14ALTlg" name="ExposeWaferActivity" specification="_lLst4OldEe-Ojsc14ALTlg" node="_Bsq0AOleEe-Ojsc14ALTlg _Dc1KEOleEe-Ojsc14ALTlg _V-swMOrGEe-jb6NYTMurqw _nVKQQOrHEe-jb6NYTMurqw">
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_KIaesOrGEe-jb6NYTMurqw" name="FindWaferHeightMapOpaqueBehavior"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gY9TIOrHEe-jb6NYTMurqw" name="ExposeStepOpaqueBehavior"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_bHPXUOrGEe-jb6NYTMurqw" target="_V-swMOrGEe-jb6NYTMurqw" source="_Bsq0AOleEe-Ojsc14ALTlg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_sspSUOrHEe-jb6NYTMurqw" target="_nVKQQOrHEe-jb6NYTMurqw" source="_V-swMOrGEe-jb6NYTMurqw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_uDAoUOrHEe-jb6NYTMurqw" target="_Dc1KEOleEe-Ojsc14ALTlg" source="_nVKQQOrHEe-jb6NYTMurqw"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_Bsq0AOleEe-Ojsc14ALTlg" name="Start Activity" outgoing="_bHPXUOrGEe-jb6NYTMurqw"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_Dc1KEOleEe-Ojsc14ALTlg" name="End Activity" incoming="_uDAoUOrHEe-jb6NYTMurqw"/>
+      <node xmi:type="uml:CallBehaviorAction" xmi:id="_V-swMOrGEe-jb6NYTMurqw" name="CallBehaviorActionFindWaferHeightMap" incoming="_bHPXUOrGEe-jb6NYTMurqw" outgoing="_sspSUOrHEe-jb6NYTMurqw" behavior="_KIaesOrGEe-jb6NYTMurqw"/>
+      <node xmi:type="uml:CallBehaviorAction" xmi:id="_nVKQQOrHEe-jb6NYTMurqw" name="CallBehaviorActionExposeStep" incoming="_sspSUOrHEe-jb6NYTMurqw" outgoing="_uDAoUOrHEe-jb6NYTMurqw" behavior="_gY9TIOrHEe-jb6NYTMurqw"/>
+    </ownedBehavior>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_lLst4OldEe-Ojsc14ALTlg" name="ExposeWafer" method="_oxvngOldEe-Ojsc14ALTlg">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_pzHtQOoTEe-Ljd1cON6n5g" name="currentWaferID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pzHtQeoTEe-Ljd1cON6n5g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pzHtQuoTEe-Ljd1cON6n5g" value="1"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_pzHtQ-oTEe-Ljd1cON6n5g" value="1"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_47y8kOoTEe-Ljd1cON6n5g" name="result" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_47y8keoTEe-Ljd1cON6n5g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_47y8kuoTEe-Ljd1cON6n5g" value="1"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_47y8k-oTEe-Ljd1cON6n5g" value="1"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_w-9aoN8XEe-DvMFX4TNdtA" name="Launch">
+    <packagedElement xmi:type="uml:Activity" xmi:id="__C2zMN8XEe-DvMFX4TNdtA" name="LaunchExposeActivity" visibility="public" node="_UQoYgN8YEe-DvMFX4TNdtA _x3of4OlbEe-Ojsc14ALTlg _NfilIOleEe-Ojsc14ALTlg _JYhJgOobEe-U1oQ1spQbIg">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_z5PyUOlbEe-Ojsc14ALTlg" target="_UQoYgN8YEe-DvMFX4TNdtA" source="_x3of4OlbEe-Ojsc14ALTlg"/>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_UzcQkOleEe-Ojsc14ALTlg" target="_RNfdkOleEe-Ojsc14ALTlg" source="_UQrb0N8YEe-DvMFX4TNdtA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_UzgiAOleEe-Ojsc14ALTlg" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_UzgiAeleEe-Ojsc14ALTlg" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_n9ZoIOobEe-U1oQ1spQbIg" target="_jpVK4OobEe-U1oQ1spQbIg" source="_PloMAOobEe-U1oQ1spQbIg">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_n9kAMOobEe-U1oQ1spQbIg" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_n9knQOobEe-U1oQ1spQbIg" value="1"/>
+      </edge>
+      <node xmi:type="uml:CreateObjectAction" xmi:id="_UQoYgN8YEe-DvMFX4TNdtA" name="CreateExposeStation" incoming="_z5PyUOlbEe-Ojsc14ALTlg" classifier="_v90fIN2VEe-MDutqMaWLOw">
+        <result xmi:type="uml:OutputPin" xmi:id="_UQrb0N8YEe-DvMFX4TNdtA" name="result" outgoing="_UzcQkOleEe-Ojsc14ALTlg" type="_v90fIN2VEe-MDutqMaWLOw">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_xIPWgOMJEe-UJZx4mgqsKQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SYCiEOVhEe-VHZ4WCOxX1g" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Tfui4OVhEe-VHZ4WCOxX1g" value="1"/>
+        </result>
+      </node>
+      <node xmi:type="uml:InitialNode" xmi:id="_x3of4OlbEe-Ojsc14ALTlg" name="InitialNode4" outgoing="_z5PyUOlbEe-Ojsc14ALTlg"/>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_NfilIOleEe-Ojsc14ALTlg" name="CallExposeWafer" operation="_lLst4OldEe-Ojsc14ALTlg">
+        <argument xmi:type="uml:InputPin" xmi:id="_jpVK4OobEe-U1oQ1spQbIg" name="argument" incoming="_n9ZoIOobEe-U1oQ1spQbIg">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_jpVK4eobEe-U1oQ1spQbIg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jpVK4uobEe-U1oQ1spQbIg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jpVx8OobEe-U1oQ1spQbIg" value="1"/>
+        </argument>
+        <result xmi:type="uml:OutputPin" xmi:id="_4Kk20OoaEe-U1oQ1spQbIg" name="result">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_4KmsAOoaEe-U1oQ1spQbIg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7jdeMOoaEe-U1oQ1spQbIg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8dgEkOoaEe-U1oQ1spQbIg" value="1"/>
+        </result>
+        <target xmi:type="uml:InputPin" xmi:id="_RNfdkOleEe-Ojsc14ALTlg" name="target" incoming="_UzcQkOleEe-Ojsc14ALTlg" type="_v90fIN2VEe-MDutqMaWLOw">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_TMAYsOleEe-Ojsc14ALTlg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RNfdkeleEe-Ojsc14ALTlg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RNfdkuleEe-Ojsc14ALTlg" value="1"/>
+        </target>
+      </node>
+      <node xmi:type="uml:ValueSpecificationAction" xmi:id="_JYhJgOobEe-U1oQ1spQbIg" name="waferID">
+        <result xmi:type="uml:OutputPin" xmi:id="_PloMAOobEe-U1oQ1spQbIg" name="result" outgoing="_n9ZoIOobEe-U1oQ1spQbIg">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_myn3EOobEe-U1oQ1spQbIg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PloMAeobEe-U1oQ1spQbIg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PloMAuobEe-U1oQ1spQbIg" value="1"/>
+        </result>
+        <value xmi:type="uml:LiteralString" xmi:id="_PllIsOobEe-U1oQ1spQbIg" value="A0000001"/>
+      </node>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pwWbMOoVEe-Ljd1cON6n5g" name="WaferHeightMap">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8llb0OoVEe-Ljd1cON6n5g" name="measurements">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8llb0eoVEe-Ljd1cON6n5g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8llb0uoVEe-Ljd1cON6n5g" value="10000"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_n-SyQOoWEe-U1oQ1spQbIg" memberEnd="_n-bVIOoWEe-U1oQ1spQbIg _n-dKUeoWEe-U1oQ1spQbIg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_n-auEOoWEe-U1oQ1spQbIg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_n-auEeoWEe-U1oQ1spQbIg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_n-dKUeoWEe-U1oQ1spQbIg" name="exposestation" type="_v90fIN2VEe-MDutqMaWLOw" association="_n-SyQOoWEe-U1oQ1spQbIg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vH2nMOocEe-U1oQ1spQbIg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wAYKoOocEe-U1oQ1spQbIg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_n-bVIOoWEe-U1oQ1spQbIg" name="waferheightmap" type="_pwWbMOoVEe-Ljd1cON6n5g" aggregation="composite" association="_n-SyQOoWEe-U1oQ1spQbIg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n-cjQOoWEe-U1oQ1spQbIg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n-dKUOoWEe-U1oQ1spQbIg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_L4H1UN4vEe-N187eU4vYzA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_L4JDcN4vEe-N187eU4vYzA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_vtgUcOPmEe-y8pP0qai9pQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vtiwsOPmEe-y8pP0qai9pQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_eWxMsOSXEe-paowVMygXDA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eW0QAOSXEe-paowVMygXDA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_axKPgOVpEe-7BeU-u_Esew">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_axMrwOVpEe-7BeU-u_Esew" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="__wn64OlZEe-Ojsc14ALTlg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__wq-MOlZEe-Ojsc14ALTlg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Model>
