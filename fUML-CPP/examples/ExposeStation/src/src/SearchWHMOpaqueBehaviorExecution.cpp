@@ -1,5 +1,5 @@
 /*
- * ExposeStepOpaqueBehaviorExecution.cpp
+ * SearchWHMOpaqueBehaviorExecution.cpp
  * 
  * Auto-generated file
  */
@@ -13,7 +13,7 @@
 #include <fuml/semantics/loci/Locus.h>
 #include <fuml/semantics/commonbehavior/ParameterValue.h>
 
-#include "ExposeStepOpaqueBehaviorExecution.h"
+#include "SearchWHMOpaqueBehaviorExecution.h"
 
 /* Start of user code : User-defined includes and using directives
  * This section may be used for includes and using directives.
@@ -37,9 +37,9 @@ using namespace Expose_Station_Model;
  * End of user code
  */
 
-ExposeStepOpaqueBehaviorExecution::ExposeStepOpaqueBehaviorExecution()
+SearchWHMOpaqueBehaviorExecution::SearchWHMOpaqueBehaviorExecution()
 {
-	this->types->push_back(Expose_Station_ModelModel::Instance()->Expose_Station_Model_ExposeStation_ExposeWaferActivity_ExposeStepOpaqueBehavior);
+	this->types->push_back(Expose_Station_ModelModel::Instance()->Expose_Station_Model_ExposeStation_SearchWHMOpaqueBehavior);
 	/* Start of user code : Additional opaque behavior execution initializations
  	 * This section may be used to do any additional opaque behavior execution initialization,
 	 * for example initializing user-defined members.
@@ -51,7 +51,7 @@ ExposeStepOpaqueBehaviorExecution::ExposeStepOpaqueBehaviorExecution()
  	 */
 }
 
-ExposeStepOpaqueBehaviorExecution::~ExposeStepOpaqueBehaviorExecution()
+SearchWHMOpaqueBehaviorExecution::~SearchWHMOpaqueBehaviorExecution()
 {
 	/* Start of user code : Additional opaque behavior execution cleanup
  	 * This section may be used to do any additional opaque behavior execution cleanup,
@@ -64,14 +64,14 @@ ExposeStepOpaqueBehaviorExecution::~ExposeStepOpaqueBehaviorExecution()
  	 */
 }
 
-void ExposeStepOpaqueBehaviorExecution::doBody(const ParameterValueListPtr& inputParameters,
+void SearchWHMOpaqueBehaviorExecution::doBody(const ParameterValueListPtr& inputParameters,
 	const ParameterValueListPtr& outputParameters)
 {
 }
 
-ValuePtr ExposeStepOpaqueBehaviorExecution::new_()
+ValuePtr SearchWHMOpaqueBehaviorExecution::new_()
 {
-	std::shared_ptr<ExposeStepOpaqueBehaviorExecution> newValue(new ExposeStepOpaqueBehaviorExecution());
+	std::shared_ptr<SearchWHMOpaqueBehaviorExecution> newValue(new SearchWHMOpaqueBehaviorExecution());
 	newValue->setThisObject_Ptr(newValue);
 	return newValue;
 }

@@ -1,11 +1,11 @@
 /*
- * ExposeStepOpaqueBehaviorExecution.h
+ * SearchWHMOpaqueBehaviorExecution.h
  * 
  * Auto-generated file
  */
 
-#ifndef EXPOSESTEPOPAQUEBEHAVIOR_EXECUTION_H
-#define EXPOSESTEPOPAQUEBEHAVIOR_EXECUTION_H
+#ifndef SEARCHWHMOPAQUEBEHAVIOR_EXECUTION_H
+#define SEARCHWHMOPAQUEBEHAVIOR_EXECUTION_H
 
 #include <fuml/semantics/commonbehavior/OpaqueBehaviorExecution.h>
 
@@ -20,11 +20,11 @@
 
 namespace Expose_Station_Model
 {
-	class ExposeStepOpaqueBehaviorExecution : public OpaqueBehaviorExecution
+	class SearchWHMOpaqueBehaviorExecution : public OpaqueBehaviorExecution
 	{
 		public:
-			ExposeStepOpaqueBehaviorExecution();
-			virtual ~ExposeStepOpaqueBehaviorExecution();
+			SearchWHMOpaqueBehaviorExecution();
+			virtual ~SearchWHMOpaqueBehaviorExecution();
 
 			virtual void doBody(const ParameterValueListPtr&, const ParameterValueListPtr&) override;
 			virtual ValuePtr new_() override;		
@@ -40,4 +40,4 @@ namespace Expose_Station_Model
 	};
 }
 
-#endif /* EXPOSESTEPOPAQUEBEHAVIOR_EXECUTION_H */
+#endif /* SEARCHWHMOPAQUEBEHAVIOR_EXECUTION_H */

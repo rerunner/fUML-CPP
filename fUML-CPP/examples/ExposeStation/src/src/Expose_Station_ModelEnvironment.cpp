@@ -7,8 +7,7 @@
 #include <string>
 
 #include "Expose_Station_ModelModel.h"
-#include "ExposeStepOpaqueBehaviorExecution.h"
-#include "FindWaferHeightMapOpaqueBehaviorExecution.h"
+#include "SearchWHMOpaqueBehaviorExecution.h"
 
 #include "Expose_Station_ModelEnvironment.h"
 
@@ -41,12 +40,9 @@ Expose_Station_ModelEnvironment::Expose_Station_ModelEnvironment()
 	/*
 	 * Create custom opaque behavior execution instances and add them to the execution environment.
 	 */
-	std::shared_ptr<ExposeStepOpaqueBehaviorExecution> _ExposeStepOpaqueBehaviorExecution(new ExposeStepOpaqueBehaviorExecution());
-	_ExposeStepOpaqueBehaviorExecution->setThisObject_Ptr(_ExposeStepOpaqueBehaviorExecution);
-	this->addPrimitiveBehaviorPrototype(_ExposeStepOpaqueBehaviorExecution);
-	std::shared_ptr<FindWaferHeightMapOpaqueBehaviorExecution> _FindWaferHeightMapOpaqueBehaviorExecution(new FindWaferHeightMapOpaqueBehaviorExecution());
-	_FindWaferHeightMapOpaqueBehaviorExecution->setThisObject_Ptr(_FindWaferHeightMapOpaqueBehaviorExecution);
-	this->addPrimitiveBehaviorPrototype(_FindWaferHeightMapOpaqueBehaviorExecution);
+	std::shared_ptr<SearchWHMOpaqueBehaviorExecution> _SearchWHMOpaqueBehaviorExecution(new SearchWHMOpaqueBehaviorExecution());
+	_SearchWHMOpaqueBehaviorExecution->setThisObject_Ptr(_SearchWHMOpaqueBehaviorExecution);
+	this->addPrimitiveBehaviorPrototype(_SearchWHMOpaqueBehaviorExecution);
 
 	/* Start of user code : Additional environment initializations
  	 * This section may be used to do any additional environment initialization,
