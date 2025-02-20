@@ -7,7 +7,7 @@
 #include <string>
 
 #include "Expose_Station_ModelModel.h"
-#include "SearchWHMOpaqueBehaviorExecution.h"
+#include "findWHMOpaqueBehaviorExecution.h"
 
 #include "Expose_Station_ModelEnvironment.h"
 
@@ -40,9 +40,9 @@ Expose_Station_ModelEnvironment::Expose_Station_ModelEnvironment()
 	/*
 	 * Create custom opaque behavior execution instances and add them to the execution environment.
 	 */
-	std::shared_ptr<SearchWHMOpaqueBehaviorExecution> _SearchWHMOpaqueBehaviorExecution(new SearchWHMOpaqueBehaviorExecution());
-	_SearchWHMOpaqueBehaviorExecution->setThisObject_Ptr(_SearchWHMOpaqueBehaviorExecution);
-	this->addPrimitiveBehaviorPrototype(_SearchWHMOpaqueBehaviorExecution);
+	std::shared_ptr<findWHMOpaqueBehaviorExecution> _findWHMOpaqueBehaviorExecution(new findWHMOpaqueBehaviorExecution());
+	_findWHMOpaqueBehaviorExecution->setThisObject_Ptr(_findWHMOpaqueBehaviorExecution);
+	this->addPrimitiveBehaviorPrototype(_findWHMOpaqueBehaviorExecution);
 
 	/* Start of user code : Additional environment initializations
  	 * This section may be used to do any additional environment initialization,

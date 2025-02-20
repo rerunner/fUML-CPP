@@ -80,7 +80,7 @@
       </node>
       <node xmi:type="uml:MergeNode" xmi:id="_60ArEO-oEe-1_v_Ykfqaxw" name="MergeNode11" incoming="_9Q8AgO-oEe-1_v_Ykfqaxw _tdzNEO7mEe-gXb5v__Gg1w" outgoing="_D1pqsO-pEe-1_v_Ykfqaxw"/>
     </ownedBehavior>
-    <ownedBehavior xmi:type="uml:Activity" xmi:id="_r3lnwO7nEe-gXb5v__Gg1w" name="FindWaferHeightMapImpl" specification="_Nj94QO7nEe-gXb5v__Gg1w" node="_1fhLUO7nEe-gXb5v__Gg1w _2rlV0O7nEe-gXb5v__Gg1w _H1GbgO7oEe-gXb5v__Gg1w _LfsJwO-fEe-zd-jpaxXKtw _NEH-sO-kEe-zd-jpaxXKtw _Yd6koO-oEe-1_v_Ykfqaxw">
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_r3lnwO7nEe-gXb5v__Gg1w" name="FindWaferHeightMapImpl" specification="_Nj94QO7nEe-gXb5v__Gg1w" node="_1fhLUO7nEe-gXb5v__Gg1w _2rlV0O7nEe-gXb5v__Gg1w _H1GbgO7oEe-gXb5v__Gg1w _LfsJwO-fEe-zd-jpaxXKtw _Yd6koO-oEe-1_v_Ykfqaxw _26TcUO-tEe-GPanAfYfolw">
       <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ropqQO-fEe-zd-jpaxXKtw" name="findWHMOpaqueBehavior">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_hKksYO-gEe-zd-jpaxXKtw" name="WaferIDParameter" visibility="public" effect="create">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -114,13 +114,13 @@
         <guard xmi:type="uml:LiteralBoolean" xmi:id="_rW29YO-kEe-zd-jpaxXKtw" value="true"/>
         <weight xmi:type="uml:LiteralInteger" xmi:id="_rW29Ye-kEe-zd-jpaxXKtw" value="1"/>
       </edge>
-      <edge xmi:type="uml:ObjectFlow" xmi:id="_eJyiUO-oEe-1_v_Ykfqaxw" target="_Yd6koO-oEe-1_v_Ykfqaxw" source="_biBysO-kEe-zd-jpaxXKtw">
-        <guard xmi:type="uml:LiteralBoolean" xmi:id="_eKGrYO-oEe-1_v_Ykfqaxw" value="true"/>
-        <weight xmi:type="uml:LiteralInteger" xmi:id="_eKHScO-oEe-1_v_Ykfqaxw" value="1"/>
-      </edge>
       <edge xmi:type="uml:ObjectFlow" xmi:id="_e7qrMO-oEe-1_v_Ykfqaxw" target="_2rlV0O7nEe-gXb5v__Gg1w" source="_Yd6koO-oEe-1_v_Ykfqaxw">
         <guard xmi:type="uml:LiteralBoolean" xmi:id="_e7_bUO-oEe-1_v_Ykfqaxw" value="true"/>
         <weight xmi:type="uml:LiteralInteger" xmi:id="_e8ACYO-oEe-1_v_Ykfqaxw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ObjectFlow" xmi:id="_LYAPkO-uEe-GPanAfYfolw" target="_Yd6koO-oEe-1_v_Ykfqaxw" source="_Ef5vUO-uEe-GPanAfYfolw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_LYKnoO-uEe-GPanAfYfolw" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_LYLOsO-uEe-GPanAfYfolw" value="1"/>
       </edge>
       <node xmi:type="uml:ActivityParameterNode" xmi:id="_1fhLUO7nEe-gXb5v__Gg1w" name="ActivityParameterNodeWaferID" outgoing="_7BLeAO-gEe-zd-jpaxXKtw" parameter="_r3nc8O7nEe-gXb5v__Gg1w">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -156,15 +156,14 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vf3jUO-hEe-zd-jpaxXKtw" value="1"/>
         </result>
       </node>
-      <node xmi:type="uml:ValueSpecificationAction" xmi:id="_NEH-sO-kEe-zd-jpaxXKtw" name="TemporaryValueSpecificationAction">
-        <result xmi:type="uml:OutputPin" xmi:id="_biBysO-kEe-zd-jpaxXKtw" name="result" outgoing="_eJyiUO-oEe-1_v_Ykfqaxw" type="_pwWbMOoVEe-Ljd1cON6n5g">
-          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_biByse-kEe-zd-jpaxXKtw" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_biBysu-kEe-zd-jpaxXKtw" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_biBys--kEe-zd-jpaxXKtw" value="1"/>
+      <node xmi:type="uml:MergeNode" xmi:id="_Yd6koO-oEe-1_v_Ykfqaxw" name="MergeNode15" incoming="_rWtMYO-kEe-zd-jpaxXKtw _LYAPkO-uEe-GPanAfYfolw" outgoing="_e7qrMO-oEe-1_v_Ykfqaxw"/>
+      <node xmi:type="uml:CreateObjectAction" xmi:id="_26TcUO-tEe-GPanAfYfolw" name="CreateDummyObjectAction" classifier="_pwWbMOoVEe-Ljd1cON6n5g">
+        <result xmi:type="uml:OutputPin" xmi:id="_Ef5vUO-uEe-GPanAfYfolw" name="object" outgoing="_LYAPkO-uEe-GPanAfYfolw" type="_pwWbMOoVEe-Ljd1cON6n5g">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_Ef5vUe-uEe-GPanAfYfolw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ef5vUu-uEe-GPanAfYfolw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ef5vU--uEe-GPanAfYfolw" value="1"/>
         </result>
-        <value xmi:type="uml:InstanceValue" xmi:id="_lUDtcO-kEe-zd-jpaxXKtw" type="_pwWbMOoVEe-Ljd1cON6n5g" instance="_Avn_4O7jEe-gXb5v__Gg1w"/>
       </node>
-      <node xmi:type="uml:MergeNode" xmi:id="_Yd6koO-oEe-1_v_Ykfqaxw" name="MergeNode15" incoming="_rWtMYO-kEe-zd-jpaxXKtw _eJyiUO-oEe-1_v_Ykfqaxw" outgoing="_e7qrMO-oEe-1_v_Ykfqaxw"/>
     </ownedBehavior>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_lLst4OldEe-Ojsc14ALTlg" name="ExposeWafer" method="_GAlb0O7mEe-gXb5v__Gg1w">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_pzHtQOoTEe-Ljd1cON6n5g" name="currentWaferID">
@@ -188,7 +187,6 @@
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_nKHzEO7nEe-gXb5v__Gg1w" name="result" type="_pwWbMOoVEe-Ljd1cON6n5g" direction="return">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nKHzEe7nEe-gXb5v__Gg1w" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nKHzEu7nEe-gXb5v__Gg1w" value="1"/>
-        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_TTzwsO97Ee-zd-jpaxXKtw" name="defaultWHM" type="_pwWbMOoVEe-Ljd1cON6n5g" instance="_R-b5MO97Ee-zd-jpaxXKtw"/>
       </ownedParameter>
     </ownedOperation>
   </packagedElement>
@@ -266,8 +264,6 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n-dKUOoWEe-U1oQ1spQbIg" value="1"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_Avn_4O7jEe-gXb5v__Gg1w" classifier="_pwWbMOoVEe-Ljd1cON6n5g"/>
-  <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_R-b5MO97Ee-zd-jpaxXKtw" name="emptyWHM" classifier="_pwWbMOoVEe-Ljd1cON6n5g"/>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_L4H1UN4vEe-N187eU4vYzA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_L4JDcN4vEe-N187eU4vYzA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
