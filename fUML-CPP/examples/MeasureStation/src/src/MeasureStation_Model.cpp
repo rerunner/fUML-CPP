@@ -1,4 +1,4 @@
-#include "Expose_Station_ModelEnvironment.h"
+#include "MeasureStation_ModelEnvironment.h"
 #include <iostream>
 
 using namespace std;
@@ -21,7 +21,7 @@ int main(int argc, char* argv[])
 
 	for(int i = 1; i < argc; i++)
 	{
-		Expose_Station_Model::Expose_Station_ModelEnvironment::Instance()->execute(argv[i]);
+		MeasureStation_Model::MeasureStation_ModelEnvironment::Instance()->execute(argv[i]);
 	}
 
 	return 0;

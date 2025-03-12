@@ -1,15 +1,15 @@
 /*
- * Expose_Station_ModelEnvironment.cpp
+ * MeasureStation_ModelEnvironment.cpp
  * 
  * Auto-generated file
  */
 
 #include <string>
 
-#include "Expose_Station_ModelModel.h"
-#include "findWHMOpaqueBehaviorExecution.h"
+#include "MeasureStation_ModelModel.h"
+#include "DoMeasurementOpaqueBehaviorExecution.h"
 
-#include "Expose_Station_ModelEnvironment.h"
+#include "MeasureStation_ModelEnvironment.h"
 
 /* Start of user code : User-defined includes and using directives
  * This section may be used for includes and using directives.
@@ -20,7 +20,7 @@
  * End of user code
  */
 
-using namespace Expose_Station_Model;
+using namespace MeasureStation_Model;
 
 /* Start of user code : User-defined members
  * This section may be used for user-defined members,
@@ -33,16 +33,16 @@ using namespace Expose_Station_Model;
  * End of user code
  */
 
-Expose_Station_ModelEnvironment::Expose_Station_ModelEnvironment()
+MeasureStation_ModelEnvironment::MeasureStation_ModelEnvironment()
 {
 	this->initializeEnvironment();
 
 	/*
 	 * Create custom opaque behavior execution instances and add them to the execution environment.
 	 */
-	std::shared_ptr<findWHMOpaqueBehaviorExecution> _findWHMOpaqueBehaviorExecution(new findWHMOpaqueBehaviorExecution());
-	_findWHMOpaqueBehaviorExecution->setThisObject_Ptr(_findWHMOpaqueBehaviorExecution);
-	this->addPrimitiveBehaviorPrototype(_findWHMOpaqueBehaviorExecution);
+	std::shared_ptr<DoMeasurementOpaqueBehaviorExecution> _DoMeasurementOpaqueBehaviorExecution(new DoMeasurementOpaqueBehaviorExecution());
+	_DoMeasurementOpaqueBehaviorExecution->setThisObject_Ptr(_DoMeasurementOpaqueBehaviorExecution);
+	this->addPrimitiveBehaviorPrototype(_DoMeasurementOpaqueBehaviorExecution);
 
 	/* Start of user code : Additional environment initializations
  	 * This section may be used to do any additional environment initialization,
@@ -55,7 +55,7 @@ Expose_Station_ModelEnvironment::Expose_Station_ModelEnvironment()
  	 */
 }
 
-Expose_Station_ModelEnvironment::~Expose_Station_ModelEnvironment()
+MeasureStation_ModelEnvironment::~MeasureStation_ModelEnvironment()
 {
 	/* Start of user code : Additional environment cleanup
  	 * This section may be used to do any additional environment cleanup,
@@ -68,20 +68,20 @@ Expose_Station_ModelEnvironment::~Expose_Station_ModelEnvironment()
  	 */
 }
 
-const std::shared_ptr<Expose_Station_ModelEnvironment>& Expose_Station_ModelEnvironment::Instance()
+const std::shared_ptr<MeasureStation_ModelEnvironment>& MeasureStation_ModelEnvironment::Instance()
 {
-	static std::shared_ptr<Expose_Station_ModelEnvironment> instance = nullptr;
+	static std::shared_ptr<MeasureStation_ModelEnvironment> instance = nullptr;
 
 	if(!instance)
 	{
-		instance.reset(new Expose_Station_ModelEnvironment());
-		instance->inMemoryModel = Expose_Station_ModelModel::Instance();
+		instance.reset(new MeasureStation_ModelEnvironment());
+		instance->inMemoryModel = MeasureStation_ModelModel::Instance();
 	}
 
 	return instance;
 }
 
-void Expose_Station_ModelEnvironment::execute(std::string behaviorName)
+void MeasureStation_ModelEnvironment::execute(std::string behaviorName)
 {
 	/* Start of user code : Context and inputs initializations
  	 * This section may be used to initialize the execution context 

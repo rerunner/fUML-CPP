@@ -1,11 +1,11 @@
 /*
- * findWHMOpaqueBehaviorExecution.h
+ * DoMeasurementOpaqueBehaviorExecution.h
  * 
  * Auto-generated file
  */
 
-#ifndef FINDWHMOPAQUEBEHAVIOR_EXECUTION_H
-#define FINDWHMOPAQUEBEHAVIOR_EXECUTION_H
+#ifndef DOMEASUREMENTOPAQUEBEHAVIOR_EXECUTION_H
+#define DOMEASUREMENTOPAQUEBEHAVIOR_EXECUTION_H
 
 #include <fuml/semantics/commonbehavior/OpaqueBehaviorExecution.h>
 
@@ -18,13 +18,13 @@
  * End of user code
  */
 
-namespace Expose_Station_Model
+namespace MeasureStation_Model
 {
-	class findWHMOpaqueBehaviorExecution : public OpaqueBehaviorExecution
+	class DoMeasurementOpaqueBehaviorExecution : public OpaqueBehaviorExecution
 	{
 		public:
-			findWHMOpaqueBehaviorExecution();
-			virtual ~findWHMOpaqueBehaviorExecution();
+			DoMeasurementOpaqueBehaviorExecution();
+			virtual ~DoMeasurementOpaqueBehaviorExecution();
 
 			virtual void doBody(const ParameterValueListPtr&, const ParameterValueListPtr&) override;
 			virtual ValuePtr new_() override;		
@@ -40,4 +40,4 @@ namespace Expose_Station_Model
 	};
 }
 
-#endif /* FINDWHMOPAQUEBEHAVIOR_EXECUTION_H */
+#endif /* DOMEASUREMENTOPAQUEBEHAVIOR_EXECUTION_H */
