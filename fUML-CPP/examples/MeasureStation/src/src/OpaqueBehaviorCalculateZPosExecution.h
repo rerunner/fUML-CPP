@@ -1,11 +1,11 @@
 /*
- * DoMeasurementOpaqueBehaviorExecution.h
+ * OpaqueBehaviorCalculateZPosExecution.h
  * 
  * Auto-generated file
  */
 
-#ifndef DOMEASUREMENTOPAQUEBEHAVIOR_EXECUTION_H
-#define DOMEASUREMENTOPAQUEBEHAVIOR_EXECUTION_H
+#ifndef OPAQUEBEHAVIORCALCULATEZPOS_EXECUTION_H
+#define OPAQUEBEHAVIORCALCULATEZPOS_EXECUTION_H
 
 #include <fuml/semantics/commonbehavior/OpaqueBehaviorExecution.h>
 
@@ -20,11 +20,11 @@
 
 namespace MeasureStation_Model
 {
-	class DoMeasurementOpaqueBehaviorExecution : public OpaqueBehaviorExecution
+	class OpaqueBehaviorCalculateZPosExecution : public OpaqueBehaviorExecution
 	{
 		public:
-			DoMeasurementOpaqueBehaviorExecution();
-			virtual ~DoMeasurementOpaqueBehaviorExecution();
+			OpaqueBehaviorCalculateZPosExecution();
+			virtual ~OpaqueBehaviorCalculateZPosExecution();
 
 			virtual void doBody(const ParameterValueListPtr&, const ParameterValueListPtr&) override;
 			virtual ValuePtr new_() override;		
@@ -40,4 +40,4 @@ namespace MeasureStation_Model
 	};
 }
 
-#endif /* DOMEASUREMENTOPAQUEBEHAVIOR_EXECUTION_H */
+#endif /* OPAQUEBEHAVIORCALCULATEZPOS_EXECUTION_H */

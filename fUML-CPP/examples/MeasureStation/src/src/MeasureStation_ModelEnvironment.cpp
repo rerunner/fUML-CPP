@@ -7,7 +7,7 @@
 #include <string>
 
 #include "MeasureStation_ModelModel.h"
-#include "DoMeasurementOpaqueBehaviorExecution.h"
+#include "OpaqueBehaviorCalculateZPosExecution.h"
 
 #include "MeasureStation_ModelEnvironment.h"
 
@@ -40,9 +40,9 @@ MeasureStation_ModelEnvironment::MeasureStation_ModelEnvironment()
 	/*
 	 * Create custom opaque behavior execution instances and add them to the execution environment.
 	 */
-	std::shared_ptr<DoMeasurementOpaqueBehaviorExecution> _DoMeasurementOpaqueBehaviorExecution(new DoMeasurementOpaqueBehaviorExecution());
-	_DoMeasurementOpaqueBehaviorExecution->setThisObject_Ptr(_DoMeasurementOpaqueBehaviorExecution);
-	this->addPrimitiveBehaviorPrototype(_DoMeasurementOpaqueBehaviorExecution);
+	std::shared_ptr<OpaqueBehaviorCalculateZPosExecution> _OpaqueBehaviorCalculateZPosExecution(new OpaqueBehaviorCalculateZPosExecution());
+	_OpaqueBehaviorCalculateZPosExecution->setThisObject_Ptr(_OpaqueBehaviorCalculateZPosExecution);
+	this->addPrimitiveBehaviorPrototype(_OpaqueBehaviorCalculateZPosExecution);
 
 	/* Start of user code : Additional environment initializations
  	 * This section may be used to do any additional environment initialization,
